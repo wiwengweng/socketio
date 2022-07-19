@@ -74,6 +74,8 @@ readXml("./src/package.xml", json => {
 
   replaceFile(`./src/${packageConfig.widgetName}.tsx`, /Graph/g, packageConfig.widgetName);
 
+  replaceFile(`./typings/${packageConfig.widgetName}.d.ts`, /Graph/g, packageConfig.widgetName);
+
   console.log('update: done');
   //#endregion
 
